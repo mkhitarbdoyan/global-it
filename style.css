@@ -4,16 +4,20 @@
     margin:0;
     text-decoration: none;
 }
+
 body{
     background-color: #e2e2e2d5;
+}
+.cont{
+    padding : 0 5%
 }
 header{
     background-image: url("./mainPage/illustrations/main/main-illustration.svg");
     background-repeat: no-repeat;
     background-position:right bottom;
     background-size: 500px;
+    min-width: 1020px;
     width: 100%;
-
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -30,7 +34,7 @@ header{
 .header_logo{
    grid-area: logo ;
    justify-self: center;  
-   padding: auto 50px;
+   padding: auto 12%
 }
 .nav_heder{
     display:grid;
@@ -44,13 +48,7 @@ header{
     grid-area: content;
   
 }
-.header_tex{
-    font-family: Arial AMU;
-    letter-spacing: 0.05em;
-    color: #000000;
-    justify-self: center;
-    grid-area: tex;
-}
+
 .nav-nav{
     grid-area: nav_nav;
 }
@@ -75,20 +73,30 @@ header{
     justify-items: center;
     
 }
+.header_tex{
+    margin: 0 -60px;
+    font-family: Arial AMU;
+    letter-spacing: 0.05em;
+    color: #000000;
+    justify-self: center;
+    grid-area: tex;
+}
 .header-phon{
     justify-content:center;
     border-radius: 100%;
     margin: auto 12px;
-    width: 50px;
-    height: 50px;
     background: #3561B5;
     border: 4px solid  rgba(255, 255, 255, 0.5);
 }
 
+.header-phon img{
+    margin:7px
+}
 .soc{
    padding:15px;
 }
 .header_title{
+    
     font-family: Arial AMU;
     font-style: normal;
     font-weight: bold;
@@ -124,7 +132,7 @@ header{
 }
 .icons{
     margin: auto 60px;
-    padding: 60px 0 ;
+    padding: 60px 5% 60px 10px;
     grid-area: icons;
 }
 .icons .icon{
@@ -143,7 +151,7 @@ button.icon_mesin{
 }
 /* /////////// */
 .container{
-    margin:0 60px;
+    margin:0 90px;
 }
 .right{
     float:right;
@@ -164,23 +172,26 @@ button.icon_mesin{
     font-family: Arial AMU;
     font-style: normal;
     font-weight: bold;
-    line-height: 131.5%;
+    line-height: 200%;
     color: #252525;
     margin:50px 0px
 
 }
 .start-up-imb{
-   
+   column-gap: 10px;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 .st img{
-    width: 250px;
+        width: 100%;
     height: auto;
     border-radius: 15px;
     grid-area: img;
 }
 .st{
+    align-content: center;
+    width: 950px;
+    height: 435px;
     display: grid;
     padding: 20px;
     background: #CCCCCC;
@@ -217,17 +228,19 @@ color: #252525;
 
 }
 .start-up-imb a{
-    font-size: 15px;
+
+font-size: 15px;
 line-height: 131.5%;
 letter-spacing: 0.055em;
 text-decoration-line: underline;
 color: #252525;
 }
 .imb-bl{
+    row-gap: 10px;
     display: grid;
 }
 .imb-bl div{
-      padding: 22px 18px;
+      padding: 41px;
     background: #CCCCCC;
     box-shadow: 8px 8px 14px rgb(0 0 0 / 25%);
     border-radius: 15px;
@@ -242,7 +255,7 @@ color: #252525;
 .new-button{
     margin: 50px 0 10px 0;
     grid-area: button;
-    /* padding: 50px 0 */
+  
 }
 
 .faculty-block{
@@ -261,11 +274,19 @@ color: #252525;
 }
 .mult ,.prog,.web{
       background-image: url(./mainPage/my-icon/mult.-bac.svg);
+    background-size: 180px;
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-position-x: -26px;
-    background-position-y: 240px;
+    background-position-x: 0px;
+    background-position-y: 260px;
+}
+.faculty-icon svg{
 
+    margin: 13% auto;
+    display: block;
+}
+.pr-pr{
+    margin:0 15px
 }
 .prog{
      background-image: url(./mainPage/my-icon/prog.svg);
@@ -279,6 +300,7 @@ padding: 30px 0 0 30px;
      background-image: url(./mainPage/my-icon/web.svg);
 }
 .faculty-header{
+    padding:0 50px;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -312,10 +334,12 @@ padding: 30px 0 0 30px;
 }
 
 .column{
-    margin: 50px;
-    display:grid;
+    box-sizing: border-box;
+    margin: 50px 0;
+    display: grid;
+    padding: 80px;
     grid-template-columns: auto auto auto;
-    gap:40px
+    gap: 12px;
 
 }
 .faculty-c{
@@ -328,11 +352,16 @@ background-color: #0A8100;
     background-color: #CC9300;
 }
 
+.csha .faculty-c .pr {
+    max-width: 5px 0;
+    color: #0000
+}
 /* ///////////////////job   */
 
 .job{
   
-  margin: 50px;
+box-sizing: border-box;
+  padding: 0 80px;
   text-align: center;
 }
  h1{
@@ -343,7 +372,7 @@ background-color: #0A8100;
 .job-column{
 
     background: #CCCCCC;
-    padding:40px 40px 0 40px;
+    padding:30px 30px 0 30px;
     box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
  
@@ -360,13 +389,17 @@ background-color: #0A8100;
 .new-button-web3{
     margin-top:100px
 }
-.new-button-web2{    margin-top: 27px;
+.new-button-web2{  
+      margin-top: 27px;
 }
 .job-games{
     padding: 10px;
     margin: 5px;
     text-align: left;
     border-bottom:1px solid #252525;;
+}
+.fa{
+    width: 340px;
 }
 .job-games p{
     font-weight: normal;
@@ -377,7 +410,6 @@ background-color: #0A8100;
 }
 .us-text{
 display: grid;
-
 grid-template-areas: "us-text us-img";
 padding: 60px;
 
@@ -395,6 +427,7 @@ padding: 60px;
     grid-area:us-tex
 }
 .img-block{
+    top:50px;
     width: 700px;
     position: relative;
 }
@@ -406,17 +439,17 @@ padding: 60px;
 
 .middle{
   
-     animation-name: on-spin;
-    animation-duration:9000ms;
+    animation-name: on-spin;
+    animation-duration:90s;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
 } 
 .little{
   
-     animation-name: spin;
-    animation-duration:9000ms;
+    animation-name: spin;
+    animation-duration: 10000s;
     animation-iteration-count: infinite;
-    animation-timing-function:linear;
+    animation-timing-function:infinite;
 
 
 }
@@ -425,7 +458,7 @@ padding: 60px;
     top: -8%;
     left: 16%;
     animation-name: spin;
-    animation-duration:9000ms;
+    animation-duration:90s;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
 }
