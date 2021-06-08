@@ -62,6 +62,7 @@
                     <img src="./mainPage/Icons/Languages/Armenian.svg" alt="">
 
                 </a>
+
             </div>
 
         </nav>
@@ -70,11 +71,11 @@
 
 
         <div class="header_tex main mg-le">
-            <p class="header_title">
-                Սկսի՛ր քո կարիերան
-                </br>
-                IT ոլորտում
-            </p>
+            <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+            <h1>
+                <span class="txt-rotate" data-period="2000" width="720px"
+                    data-rotate='[ "Սկսի՛ր քո կարիերան IT ոլորտում", "կարիերան  Սկսի՛ր քո IT ոլորտում.", "pure JS.", "pretty.", "fun!" ]'></span>
+            </h1>
             <div class="header-button">
                 <button href="#" class="buton">Դասընթացներ</button>
                 <button href="#" class="buton">Ծառայություններ</button>
@@ -82,8 +83,44 @@
 
 
         </div>
-        <div class="hed-img">
-            <img src="./mainPage/img/hed-img.svg" alt="s">
+        <div class="hed-img mg-rg">
+            <!-- ////////// -->
+            <!-- Slideshow container  start-->
+            <div class="slideshow-container">
+            
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    
+                    <img src="./mainPage/img/hed-img2.svg" >
+
+                </div>
+            
+                <div class="mySlides fade">
+                 
+                    <img src="./mainPage/img/hed-img.svg" >
+ 
+                </div>
+            
+                <div class="mySlides fade">
+
+                    <img src="./mainPage/img/hed-img3.svg">
+                    
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- ////////////////car end -->
+            <!-- <img src="./mainPage/img/hed-img.svg" alt="s"> -->
         </div>
         <div class="icons mg-le">
             <a href="#" class="icon">
@@ -517,6 +554,8 @@
 
             </textarea>
 
+            <button href="#" class="buton b-t">Ուղարկել</button>
+
 
         </form>
 
@@ -543,14 +582,16 @@
 
             <p class="bold">+374 98 960 959 <br>
                 <br>
-                +374 98 960 959</p>
+                +374 98 960 959
+            </p>
 
 
-            <p  class="or">Էլ-փոստ</p>
+            <p class="or">Էլ-փոստ</p>
 
             <p class="bold">gitedu@bk.ru <br>
                 <br>
-                globalit@gitedu.am</p>
+                globalit@gitedu.am
+            </p>
 
 
         </div>
@@ -595,7 +636,8 @@
         <div class="cu">
             <p class="hed">Հասցեներ</p>
             <p>Ք. Երևան Ալեք Մանուկլյան15ա
-                <br> (Հյուսիսային Համալսարան)</p>
+                <br> (Հյուսիսային Համալսարան)
+            </p>
             <p>Հեռախոսահամարներ </p>
             <p> +374 95 355 255 <br>
                 <br>
@@ -636,18 +678,20 @@
             <p>Փոփոխություն</p>
             <p> Հետադարձ կապ</p>
         </div>
-<!-- 
+        <!-- 
         <a class="up" href="#">
             <img src="./mainPage/my-icon/up.svg" alt="up">
         </a> -->
 
 
-        <p class="fo mg-le  ">Copyright ©2020 Բոլոր հեղինակային իրավունքները պաշտպանված են: | Կայքը պատրաստված է "ԳԼՈԲԱԼ ԻՏ"
+        <p class="fo mg-le  ">Copyright ©2020 Բոլոր հեղինակային իրավունքները պաշտպանված են: | Կայքը պատրաստված է "ԳԼՈԲԱԼ
+            ԻՏ"
             (ՍՊԸ)-ի կողմից, որը
             հանդիսանում է ընկերության Պաշտոնական կայքէջը: Կայքից նույթ տեղադրելիս հղումը gitedu.am-ին պարտադիր է:
         </p>
     </footer>
     </div>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
